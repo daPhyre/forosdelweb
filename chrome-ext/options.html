@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Opciones - Foros del web: Panel de Control</title>
+<style type="text/css">
+html, body{margin:0;padding:0}
+body{font-family:'Liberation Sans', Helvetica, Arial, sans-serif}
+h1,h2{font-family:'Liberation Serif', Times, 'Times New Roman', serif}
+h1{color:#fff;background:#000;margin:0;padding:0 1em}
+h2{padding:0 2em}
+p{padding:0 2em;font-size:0.9em}
+</style>
+<script type="text/javascript" src="options.js"></script>
+</head>
+
+<body>
+<h1><img src="icon48.png" alt="[icon]" /> Foros del web: Panel de Control</h1>
+<h2>Opciones</h2>
+<p><label>Si hay mensajes, abrir:<br/>
+http://www.forosdelweb.com/<input type="text" id="pathNew" oninput="enableSave()" /></label> [por defecto: usercp.php]</p>
+<p><label>Si no hay mensajes, abrir:<br/>
+http://www.forosdelweb.com/<input type="text" id="pathZero" oninput="enableSave()" /></label> [por defecto: vacio]</p>
+<!--p><label><input type="checkbox" id="useHttps" onclick="enableSave()" /> Usar https en lugar de http.</label> [default: no]</p-->
+<p><label><input type="checkbox" id="alwaysNew" onclick="enableSave()" /> Abrir siempre en una nueva pestaña.</label> [por defecto: no]</p>
+<p><label><input type="checkbox" id="showZero" onclick="enableSave()" /> Al haber cero mensajes, mostrar "0".</label> [por defecto: no]</p>
+<p><label><input type="checkbox" id="playSound" onclick="enableSave()" /> Al haber nuevos mensajes, reproducir un sonido.</label> [por defecto: si]</p>
+<p><label><input type="checkbox" id="showNoti" onclick="enableSave()" /> Al haber nuevos mensajes, mostrar notificaciones de escritorio.</label> [por defecto: si]</p>
+<p>Cerrar notificación de escritorio después de (segundos): <input type="text" id="timeNoti" oninput="enableSave()" /> (cero es nunca). [por defecto: 20]</p>
+<p>Intervalo de actualizacion (minutos):<input type="text" id="refreshInterval" oninput="enableSave()" /> [por defecto: 5]</p>
+<p><input type="button" value="Guardar" id="saveButton" onclick="save()" /></p>
+<h2>Permisos Opcionales</h2>
+<p><label><input type="checkbox" id="useBg" onclick="setUseBg()" /> Correr esta extensión en el fondo (La mantiene funcionando incluso después de cerrar Google Chrome).</label></p>
+<h2>Licencia</h2>
+<p>Código, ©2011-2012 daPhyre.</p>
+<p>Basado en el código base de <a href="http://github.com/daPhyre/notifications-crx">http://github.com/daPhyre/notifications-crx</a>.</p>
+</body>
+</html>

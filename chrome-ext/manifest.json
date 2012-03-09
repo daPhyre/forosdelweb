@@ -1,0 +1,20 @@
+{
+	"name": "Foros del web: Panel de Control",
+	"version": "0.6",
+	"description": "Acceso directo al panel de control de Foros del web",
+	"background_page": "background.html",
+	"options_page": "options.html",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png" },
+	"browser_action": {
+		"default_title": "Foros del web",
+		"default_icon": "icon.png" },
+	"permissions": [
+		"tabs",
+		"notifications",
+		"http://www.forosdelweb.com/" ],
+	"optional_permissions": [
+		"background" ]
+}
